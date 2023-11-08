@@ -14,7 +14,7 @@
 // Se XP for entre 9.001 e 10.000= Imortal
 // Se XP for maior ou igual a 10.001 = Radiante
 
-
+let heroi = 'Oryon';
 let currentExp = 0;
 const totalExp = 10000;
 let jogando = true;
@@ -87,7 +87,7 @@ function executeLoop() {
         currentExp = calculoGanhoPerdaXP(currentExp, jogada, limite=10000)
     }
     
-    process.stdout.write(currentExp + '/' + totalExp + '  ' + statusAtual(currentExp));
+    process.stdout.write('O herói de nome ' + heroi + ' está no nivel ' + statusAtual(currentExp) + '. Progresso da XP ' + currentExp + '/' + totalExp);
 
     setTimeout(executeLoop, 1000);
   
